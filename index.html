@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", init);
+
+        function init(){
+            let btn = document.getElementById("btn");
+            btn.addEventListener("click", check);
+            
+            function check(){
+                alert("ok");
+            }
+        }
+
+    </script>
 </head>
 <body>
-    <h1>Hi my name is Giuseppe</h1>
-    <p>test</p>
+    <button type="button" id="btn">Click here</button>
+    <div>
+        <label for="text">Libri</label>
+        <textarea name="text" id="text"></textarea>
+    </div>
 </body>
 </html>
